@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+    ui:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+            args:
+                PROJECT_DIR: "${PROJECT_DIR}"
+        container_name: ui
+        environment: 
+            NODE_ENV: "${NODE_ENV}"
+            PROJECT_DIR: "${PROJECT_DIR}"
+            VIRTUAL_HOST: "${SITE_NAME}"
+            VIRTUAL_PORT: "${UI_PORT}"
+            LETSENCRYPT_HOST: "${SITE_NAME}"
+            LETSENCRYPT_EMAIL: "${LETSENCRYPT_EMAIL}"
+        ports:
+            - "${UI_PORT}:${UI_PORT}"
+        networks:
+            - proxy
+            - app
+        volumes:
+            - .:${PROJECT_DIR}:z
+        command: /bin/sh -c "chmod +x ./start.sh && ./start.sh"
+networks:
+    proxy:
+        external:
+            name: nginx-proxy
+    app:
+    

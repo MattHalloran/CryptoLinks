@@ -1,0 +1,157 @@
+body {
+    font-family: 'Poppins';
+    background: rgb(2,0,36);
+    background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#main-container {
+    border: 4px solid #ddfffd;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 35px 0 #61fff6;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main-logo {
+    max-width: 100px;
+}
+
+#main-info {
+    margin-bottom: 5px;
+}
+
+#links-div {
+    display: inline-block;
+}
+#links-div a {
+    text-decoration: none;
+}
+
+.link-button {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    height: 2em;
+    width: 20em;
+    display: block;
+    margin-bottom: 5px;
+    transition: 0.3s ease-in-out;
+}
+.link-button:hover {
+    background: #88cde8;
+}
+.link-button span {
+    vertical-align: middle;
+}
+
+.social-icons {
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.social-icons h1 {
+    margin: 40px 0;
+}
+.social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-icons ul li {
+    vertical-align:  middle;
+    display: inline-block;
+}
+.social-icons ul li a {
+    display: block;
+    font-size: 1.4em;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 200px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.social-icons ul li a:hover {
+    background:  #88cde8;
+}
+.social-icons ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.modal {
+    background: #2450a5;
+    color: white;
+    transition: 1.1s ease-in-out;
+    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid white;
+    width: calc(min(400px, 90vw));
+    max-height: calc(min(700px, 90vh));
+}
+.closed {
+    display: none;
+}
+
+.modal-qr-div {
+    padding: 10px;
+    background: #0e1e3e;
+    border-radius: 10px 10px 0 0;
+}
+
+.qr-img {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid black;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.wallet-div {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1em 5px 10px 5px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.copied {
+    border-color: #33e433;
+    color: #33e433;
+}
+
+.copied-text {
+    display: block;
+    margin-bottom: 10px;
+}
