@@ -2,6 +2,10 @@
 Create your own crypto-friendly landing page in under 60 minutes! Only pay for the domain name and server.
 [Here](https://matthalloran.info) is an example of a site using this template.
 
+![Main Page](images/main-page.png)
+
+![Crypto Modal](images/crypto-modal.png)
+
 ## Website Features
 - Links to socials or any sites
 - Popup with QR code and press-to-select wallet address
